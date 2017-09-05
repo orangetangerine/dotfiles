@@ -35,7 +35,7 @@ apps=(
     python
     ruby
     svn
-    vim
+    vim --with-lua --with-python3 --with-override-system-vi
     wget
     zsh
 )
