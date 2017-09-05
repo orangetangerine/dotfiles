@@ -1,0 +1,6 @@
+alias 成都。。="cd .."
+alias 吃的。。="cd .."
+alias gg="go build"
+alias 啊都不="adb"
+alias j648="ssh godman@106.75.79.15 -p56000"
+alias towhich='_towhich() {cd `dirname $(which $1)`;};_towhich'

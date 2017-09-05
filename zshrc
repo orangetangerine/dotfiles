@@ -137,12 +137,8 @@ compdef _logcat logcat
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-alias 成都。。="cd .."
-alias 吃的。。="cd .."
-alias gg="go build"
-alias 啊都不="adb"
-alias j648="ssh godman@106.75.79.15 -p56000"
-alias towhich='_towhich() {cd `dirname $(which $1)`;};_towhich'
+#aliases
+[[ -f ~/.aliases ]] && source ~/.aliases
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/Orange/.sdkman"
