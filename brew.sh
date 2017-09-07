@@ -47,6 +47,7 @@ caskapps=(
     qq
     qqmusic
     wiznote
+    steam
 )
 #android-studio
 #intellij-idea-ce
