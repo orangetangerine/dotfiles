@@ -26,52 +26,34 @@ apps=(
     git
     gnu-sed --with-default-names
     go
-    hugo
-    mercurial
-    mackup
-    macvim
-    mysql
-    android-platform-tools
     python
     ruby
     svn
     vim --with-lua --with-python3 --with-override-system-vi
     wget
+	autojump
     zsh
 )
 
 caskapps=(
-    android-studio
     alfred
     atom
-    cheatsheet
     dash
-    genymotion
     google-chrome
-    intellij-idea-ce
+    android-platform-tools
     iterm2
     java
     karabiner
-    keepassx
-    kindle
-    macdown
-    pomotodo
-    pycharm-ce
     qq
     qqmusic
-    qqmacmgr
-    sogouinput
-    thunder
-    vagrant
-    virtualbox
-    vlc
     wiznote
-    youdao
 )
+#android-studio
+#intellij-idea-ce
 
+brew update
 brew install "${apps[@]}"
 brew tap caskroom/versions
-brew cask update
 brew cask install --appdir="/Applications" "${caskapps[@]}"
 brew cleanup
 brew cask cleanup
