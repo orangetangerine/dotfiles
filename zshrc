@@ -144,9 +144,8 @@ compdef _logcat logcat
 export SDKMAN_DIR="/Users/Orange/.sdkman"
 [[ -s "/Users/Orange/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/Orange/.sdkman/bin/sdkman-init.sh"
 
-eval $(thefuck --alias fk)
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

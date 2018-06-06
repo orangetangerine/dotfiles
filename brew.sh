@@ -15,7 +15,19 @@ fi
 
 brew tap homebrew/versions
 brew update
-brew upgrade --all
+brew upgrade
+
+cd "$(brew --repo)"
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+export HOMEBREW_NO_AUTO_UPDATE=true
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+cd ~
+# End Homebrew
+
 
 # Install packages
 apps=(
@@ -25,31 +37,34 @@ apps=(
     findutils
     git
     gnu-sed --with-default-names
-    go
-    python
+    #go
+    #python
     ruby
     svn
     vim --with-lua --with-python3 --with-override-system-vi
     wget
-	autojump
+    autojump
     zsh
 )
 
 caskapps=(
-    alfred
-    atom
+    #alfred
+    #atom
+    squirrel	
     dash
     google-chrome
-    android-platform-tools
+    #android-platform-tools
     iterm2
-    java
-    karabiner
+    #java
+    #karabiner
     qq
     qqmusic
-    wiznote
+    #wiznote
     steam
+    #android-studio
+    pycharm
+    clion
 )
-#android-studio
 #intellij-idea-ce
 
 brew update
