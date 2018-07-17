@@ -6,4 +6,5 @@ alias j648="ssh godman@106.75.79.15 -p56000"
 alias towhich='_towhich() {cd `dirname $(which $1)`;};_towhich'
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
 alias unsetproxy="unset ALL_PROXY"
-alias ssh -i ~/.ssh/shenwenzhe.pem shenwenzhe@106.75.9.85 -p56000
+alias goj="ssh -i ~/.ssh/shenwenzhe.pem shenwenzhe@106.75.9.85 -p56000"
+
