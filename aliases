@@ -8,3 +8,7 @@ alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1086"
 alias unsetproxy="unset ALL_PROXY"
 alias goj="ssh -i ~/.ssh/shenwenzhe.pem shenwenzhe@106.75.9.85 -p56000"
 
+
+function jwt-decode() {
+  jq -R 'split(".") | .[0],.[1] | @base64d | fromjson'
+}
